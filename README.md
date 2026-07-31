@@ -60,8 +60,8 @@ If you want to disable specta loading spinner, you can set the environment varia
 
 Specta comes with three built-in layouts:
 
-- `default`: The default layout, which renders the notebook as a dashboard.
-- `article`: A minimal, blog-like reading experience.
+- `article`: The default layout, a minimal blog-like reading experience.
+- `dashboard`: Renders the notebook as a dashboard.
 - `slides`: A fullscreen presentation mode using [reveal.js](https://revealjs.com/).
 
 ### Top-level configuration
