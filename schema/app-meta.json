@@ -17,30 +17,19 @@
           "/specta/topbarThemeToggle": {
             "title": "Top Bar Theme Toggle",
             "type": "string",
-            "enum": [
-              "Yes",
-              "No"
-            ],
+            "enum": ["Yes", "No"],
             "default": "Yes"
           },
           "/specta/defaultLayout": {
             "title": "Page layout",
             "type": "string",
-            "enum": [
-              "default",
-              "article",
-              "slides"
-            ],
+            "enum": ["default", "article", "slides"],
             "default": "default"
           },
           "/specta/hideTopbar": {
             "title": "Hide topbar",
             "type": "string",
-            "enum": [
-              "Yes",
-              "No",
-              null
-            ],
+            "enum": ["Yes", "No", null],
             "default": null
           },
           "/specta/slidesTheme": {
