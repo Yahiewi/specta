@@ -116,7 +116,7 @@ export class AppWidget extends Panel {
   }
 
   getLayout(): ISpectaLayout {
-    const layout = this._spectaAppConfig?.defaultLayout ?? 'default';
+    const layout = this._spectaAppConfig?.defaultLayout ?? 'article';
     const spectaLayout =
       this._layoutRegistry.get(layout) ??
       this._layoutRegistry.getDefaultLayout();

@@ -23,8 +23,8 @@
           "/specta/defaultLayout": {
             "title": "Page layout",
             "type": "string",
-            "enum": ["default", "article", "slides"],
-            "default": "default"
+            "enum": ["article", "dashboard", "slides"],
+            "default": "article"
           },
           "/specta/hideTopbar": {
             "title": "Hide topbar",
@@ -61,7 +61,7 @@
         },
         "/specta/defaultLayout": {
           "metadataLevel": "notebook",
-          "writeDefault": true
+          "writeDefault": false
         },
         "/specta/slidesTheme": {
           "metadataLevel": "notebook",

@@ -30,7 +30,7 @@ export const SettingContent = (props: {
     layoutRegistry?.allLayouts() ?? []
   );
   const [selectedLayout, setSelectedLayout] = useState<string>(
-    layoutRegistry?.selectedLayout?.name ?? 'default'
+    layoutRegistry?.selectedLayout?.name ?? 'article'
   );
   useEffect(() => {
     let cb: any;

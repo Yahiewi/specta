@@ -1,19 +1,20 @@
 import { ISignal, Signal } from '@lumino/signaling';
 import { ISpectaLayout, ISpectaLayoutRegistry } from '../token';
-import { DefaultLayout } from './default';
+import { DashboardLayout } from './default';
 import { ArticleLayout } from './article';
 import { SlidesLayout } from './slides';
 
 export class SpectaLayoutRegistry implements ISpectaLayoutRegistry {
   constructor() {
-    const defaultLayout = new DefaultLayout();
+    const dashboardLayout = new DashboardLayout();
+    const articleLayout = new ArticleLayout();
     this._registry = new Map<string, ISpectaLayout>();
-    this._registry.set('default', defaultLayout);
-    this._registry.set('article', new ArticleLayout());
+    this._registry.set('article', articleLayout);
+    this._registry.set('dashboard', dashboardLayout);
     this._registry.set('slides', new SlidesLayout());
     this._selectedLayout = {
-      name: 'default',
-      layout: defaultLayout
+      name: 'article',
+      layout: articleLayout
     };
   }
   get layoutAdded(): ISignal<SpectaLayoutRegistry, string> {
@@ -35,7 +36,7 @@ export class SpectaLayoutRegistry implements ISpectaLayoutRegistry {
   }
 
   getDefaultLayout(): ISpectaLayout {
-    return this._registry.get('default')!;
+    return this._registry.get('article')!;
   }
 
   async setSelectedLayout(name: string): Promise<void> {

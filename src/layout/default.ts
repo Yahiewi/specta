@@ -3,7 +3,7 @@ import { SpectaCellOutput } from '../specta_cell_output';
 import * as nbformat from '@jupyterlab/nbformat';
 import { ISpectaLayout } from '../token';
 
-export class DefaultLayout implements ISpectaLayout {
+export class DashboardLayout implements ISpectaLayout {
   async render(options: {
     host: Panel;
     items: SpectaCellOutput[];
