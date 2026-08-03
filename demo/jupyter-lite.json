@@ -20,7 +20,7 @@
           "label": "Specta"
         }
       ],
-      "defaultLayout": "default",
+      "defaultLayout": "article",
       "perFileConfig": {
         "blog.ipynb": {
           "hideTopbar": false,

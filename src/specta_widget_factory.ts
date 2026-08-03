@@ -34,7 +34,7 @@ export class SpectaWidgetFactory {
       nbPath: context.contentsModel?.path
     });
 
-    const defaultLayout = spectaConfig.defaultLayout ?? 'default';
+    const defaultLayout = spectaConfig.defaultLayout ?? 'article';
     this._options.spectaLayoutRegistry.setSelectedLayout(defaultLayout);
 
     const model = new AppModel({
