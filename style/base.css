@@ -82,7 +82,7 @@
   width: 100%;
   display: flex;
   min-width: 0;
-  flex: 1;
+  flex: 0 0 auto;
 }
 
 .specta-topbar {
